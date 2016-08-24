@@ -5,12 +5,12 @@
 }
 
 .daterangepicker.picker_1 {
-    background: #34495E;
+    background: $color-dark-base;
     color: #ECF0F1;
 }
 
 .daterangepicker.picker_1 table.table-condensed thead tr:first-child {
-    background: #1ABB9C;
+    background: $color-green-base;
 }
 
 .daterangepicker table.table-condensed thead tr:first-child th {
@@ -59,17 +59,17 @@
 }
 
 .daterangepicker.picker_2 table.table-condensed thead tr {
-    color: #1ABB9C;
+    color: $color-green-base;
 }
 
 .daterangepicker.picker_3 table.table-condensed thead tr:first-child {
-    background: #1ABB9C;
+    background: $color-green-base;
     color: #ECF0F1;
 }
 
 .daterangepicker.picker_4 table.table-condensed tbody td {
     background: #ECF0F1;
-    color: #34495E;
+    color: $color-dark-base;
     border: 1px solid #fff;
     padding: 4px 7px;
 }
@@ -80,7 +80,7 @@
 }
 
 .daterangepicker.picker_4 table.table-condensed thead tr:first-child {
-    background: #34495E;
+    background: $color-dark-base;
     color: #ECF0F1;
 }
 
@@ -136,7 +136,7 @@
 .daterangepicker td.available:hover,
 .daterangepicker th.available:hover {
     background: #eee;
-    color: #34495E;
+    color: $color-dark-base;
 }
 
 .daterangepicker td.in-range {

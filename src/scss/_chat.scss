@@ -1,0 +1,29 @@
+.chat .thumb img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+.chat .status {
+    float: left;
+    margin: 16px 0 0 -16px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border: 2px solid #FFF;
+    z-index: 12312;
+    border-radius: 50%;
+}
+.chat .status.online {
+    background: $color-green-base;
+}
+.chat .status.away {
+    background: $color-orange-base;
+}
+.chat .status.offline {
+    background: #ccc;
+}
+.chat .media-body {
+    padding-top: 5px;
+}

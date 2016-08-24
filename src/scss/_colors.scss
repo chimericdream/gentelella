@@ -1,0 +1,71 @@
+.blue {
+    color: $color-blue-base;
+}
+.purple {
+    color: $color-purple-base;
+}
+.green {
+    color: $color-green-base;
+}
+.aero {
+    color: $color-aero-base;
+}
+.red {
+    color: $color-red-base;
+}
+.dark {
+    color: $color-dark-base;
+}
+.border-blue {
+    border-color: $color-blue-base !important;
+}
+.border-purple {
+    border-color: $color-purple-base !important;
+}
+.border-green {
+    border-color: $color-green-base !important;
+}
+.border-aero {
+    border-color: $color-aero-base !important;
+}
+.border-red {
+    border-color: $color-red-base !important;
+}
+.border-dark {
+    border-color: $color-dark-base !important;
+}
+.bg-white {
+    background: #fff !important;
+    border: 1px solid #fff !important;
+    color: #73879C;
+}
+.bg-green {
+    background: $color-green-base !important;
+    border: 1px solid $color-green-base !important;
+    color: #fff;
+}
+.bg-red {
+    background: $color-red-base !important;
+    border: 1px solid $color-red-base !important;
+    color: #fff;
+}
+.bg-blue {
+    background: $color-blue-base !important;
+    border: 1px solid $color-blue-base !important;
+    color: #fff;
+}
+.bg-orange {
+    background: $color-orange-base !important;
+    border: 1px solid $color-orange-base !important;
+    color: #fff;
+}
+.bg-purple {
+    background: $color-purple-base !important;
+    border: 1px solid $color-purple-base !important;
+    color: #fff;
+}
+.bg-blue-sky {
+    background: $color-bluesky-base !important;
+    border: 1px solid $color-bluesky-base !important;
+    color: #fff;
+}
