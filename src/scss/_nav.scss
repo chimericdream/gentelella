@@ -174,3 +174,15 @@
 .top_nav .nav .open > a:hover {
     background: #D9DEE4;
 }
+.navbar-nav .open .dropdown-menu {
+    position: absolute;
+    background: #fff;
+    margin-top: 0;
+    border: 1px solid #D9DEE4;
+    right: 0;
+    left: auto;
+    width: 220px;
+}
+.navbar-nav .open .dropdown-menu.msg_list {
+    width: 300px;
+}

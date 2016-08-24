@@ -160,3 +160,6 @@ table.display tr.even.row_selected td {
 table.display tr.odd.row_selected td {
     background-color: #9FAFD1;
 }
+table.no-margin .progress {
+    margin-bottom: 0;
+}
