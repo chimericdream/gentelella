@@ -53,7 +53,7 @@ gulp.task('watch', function() {
   // Watch .js files
   gulp.watch('src/js/*.js', ['scripts']);
   // Watch .scss files
-  gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
+  gulp.watch('src/scss/**/*.scss', ['sass', 'sass-minify']);
 });
 
 // Default Task
