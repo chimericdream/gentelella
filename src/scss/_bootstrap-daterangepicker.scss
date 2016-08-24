@@ -1,319 +1,302 @@
-.daterangepicker.dropdown-menu {
-    font-size: 13px;
-    padding: 0;
-    overflow: hidden;
-}
+.daterangepicker {
+    &.dropdown-menu {
+        font-size: 13px;
+        overflow: hidden;
+        padding: 0;
+    }
 
-.daterangepicker.picker_1 {
-    background: $color-dark-base;
-    color: #ECF0F1;
-}
+    .table-condensed {
+        thead tr {
+            line-height: 14px;
 
-.daterangepicker.picker_1 table.table-condensed thead tr:first-child {
-    background: $color-green-base;
-}
+            &:first-child {
+                th {
+                    line-height: 28px;
+                    text-align: center;
+                }
 
-.daterangepicker table.table-condensed thead tr:first-child th {
-    line-height: 28px;
-    text-align: center;
-}
+                td {
+                    padding-top: 10px;
+                }
+            }
+        }
 
-.daterangepicker.picker_1 table.table-condensed thead tr {
-    background: #213345;
-}
+        th:first-child,
+        td:first-child {
+            padding-left: 12px
+        }
 
-.daterangepicker table.table-condensed thead tr {
-    line-height: 14px;
-}
+        th:last-child,
+        td:last-child {
+            padding-right: 12px
+        }
 
-.daterangepicker table.table-condensed tbody tr:first-child td {
-    padding-top: 10px;
-}
+        tbody tr:last-child td {
+            padding-bottom: 10px;
+        }
+    }
 
-.daterangepicker table.table-condensed th:first-child,
-.daterangepicker table.table-condensed td:first-child {
-    padding-left: 12px
-}
+    &.picker_1 {
+        background: $color-dark-base;
+        color: #ECF0F1;
 
-.daterangepicker table.table-condensed th:last-child,
-.daterangepicker table.table-condensed td:last-child {
-    padding-right: 12px
-}
+        .table-condensed thead tr {
+            background: #213345;
 
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-    padding: 5px 7px;
-    text-align: center;
-}
+            &:first-child {
+                background: $color-green-base;
+            }
+        }
+    }
 
-.daterangepicker table.table-condensed tbody tr:last-child td {
-    padding-bottom: 10px;
-}
+    &.picker_2 {
+        .table-condensed thead tr {
+            color: $color-green-base;
 
-.daterangepicker.picker_2 table.table-condensed thead tr:first-child {
-    color: inherit;
-}
+            &:first-child {
+                color: inherit;
+            }
+        }
+    }
 
-.daterangepicker.picker_2 table.table-condensed thead tr {
-    color: $color-green-base;
-}
+    &.picker_3 {
+        .table-condensed thead tr:first-child {
+            background: $color-green-base;
+            color: #ECF0F1;
+        }
+    }
 
-.daterangepicker.picker_3 table.table-condensed thead tr:first-child {
-    background: $color-green-base;
-    color: #ECF0F1;
-}
+    &.picker_4 {
+        .table-condensed {
+            tbody td {
+                background: #ECF0F1;
+                border: 1px solid #fff;
+                color: $color-dark-base;
+                padding: 4px 7px;
 
-.daterangepicker.picker_4 table.table-condensed tbody td {
-    background: #ECF0F1;
-    color: $color-dark-base;
-    border: 1px solid #fff;
-    padding: 4px 7px;
-}
+                &.active {
+                    background: #536A7F;
+                    color: #fff;
+                }
+            }
 
-.daterangepicker.picker_4 table.table-condensed tbody td.active {
-    background: #536A7F;
-    color: #fff;
-}
+            thead tr:first-child {
+                background: $color-dark-base;
+                color: #ECF0F1;
+            }
+        }
+    }
 
-.daterangepicker.picker_4 table.table-condensed thead tr:first-child {
-    background: $color-dark-base;
-    color: #ECF0F1;
-}
+    &.opensright .ranges,
+    &.opensright .calendar,
+    &.openscenter .ranges,
+    &.openscenter .calendar {
+        float: right;
+    }
 
-.xdisplay_input {
-    width: 240px;
-    overflow: hidden;
-    padding: 0;
-}
+    &.dropdown-menu .calendar {}
 
-.xdisplay {
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 4px;
-    width: 230px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
+    table {
+        margin: 0;
+        width: 100%;
+    }
 
-.daterangepicker.opensright .ranges,
-.daterangepicker.opensright .calendar,
-.daterangepicker.openscenter .ranges,
-.daterangepicker.openscenter .calendar {
-    float: right;
-}
+    td,
+    th {
+        cursor: pointer;
+        height: 20px;
+        text-align: center;
+        white-space: nowrap;
+        width: 20px;
+    }
 
-.daterangepicker.dropdown-menu .calendar {}
+    td.off {
+        color: #999;
+    }
 
-.daterangepicker table {
-    width: 100%;
-    margin: 0;
-}
+    td.disabled {
+        color: #999;
+    }
 
-.daterangepicker td,
-.daterangepicker th {
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    white-space: nowrap;
-}
+    td.available:hover,
+    th.available:hover {
+        background: #eee;
+        color: $color-dark-base;
+    }
 
-.daterangepicker td.off {
-    color: #999;
-}
+    td.in-range {
+        background: #E4E7EA;
+        border-radius: 0;
+    }
 
-.daterangepicker td.disabled {
-    color: #999;
-}
+    td.available + td.start-date {
+        border-radius: 4px 0 0 4px;
+    }
 
-.daterangepicker td.available:hover,
-.daterangepicker th.available:hover {
-    background: #eee;
-    color: $color-dark-base;
-}
+    td.in-range + td.end-date {
+        border-radius: 0 4px 4px 0;
+    }
 
-.daterangepicker td.in-range {
-    background: #E4E7EA;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
+    td.start-date.end-date {
+        border-radius: 4px !important;
+    }
 
-.daterangepicker td.available + td.start-date {
-    border-radius: 4px 0 0 4px;
-}
+    td.active,
+    td.active:hover {
+        background-color: #536A7F;
+        color: #fff;
+    }
 
-.daterangepicker td.in-range + td.end-date {
-    border-radius: 0 4px 4px 0;
-}
+    td.week,
+    th.week {
+        color: #ccc;
+        font-size: 80%;
+    }
 
-.daterangepicker td.start-date.end-date {
-    border-radius: 4px !important;
-}
+    select.monthselect,
+    select.yearselect {
+        border: 1px solid #ADB2B5;
+        border-radius: 0px !important;
+        cursor: default;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+        padding: 1px;
+    }
 
-.daterangepicker td.active,
-.daterangepicker td.active:hover {
-    background-color: #536A7F;
-    color: #fff;
-}
+    select.monthselect {
+        margin-right: 2%;
+        width: 56%;
+    }
 
-.daterangepicker td.week,
-.daterangepicker th.week {
-    font-size: 80%;
-    color: #ccc;
-}
+    select.yearselect {
+        width: 40%;
+    }
 
-.daterangepicker select.monthselect,
-.daterangepicker select.yearselect {
-    font-size: 12px;
-    padding: 1px;
-    height: auto;
-    margin: 0;
-    cursor: default;
-    height: 30px;
-    border: 1px solid #ADB2B5;
-    line-height: 30px;
-    border-radius: 0px !important;
-}
+    select.hourselect,
+    select.minuteselect,
+    select.ampmselect {
+        margin-bottom: 0;
+        width: 50px;
+    }
 
-.daterangepicker select.monthselect {
-    margin-right: 2%;
-    width: 56%;
-}
+    th.month {
+        width: auto;
+    }
 
-.daterangepicker select.yearselect {
-    width: 40%;
-}
+    .daterangepicker_start_input label,
+    .daterangepicker_end_input label {
+        color: #333;
+        display: block;
+        font-size: 11px;
+        font-weight: normal;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 2px;
+        text-shadow: #fff 1px 1px 0px;
+        text-transform: uppercase;
+        width: 74px;
+    }
 
-.daterangepicker select.hourselect,
-.daterangepicker select.minuteselect,
-.daterangepicker select.ampmselect {
-    width: 50px;
-    margin-bottom: 0;
-}
+    .daterangepicker_start_input {
+        float: left;
+    }
 
-.daterangepicker_start_input {
-    float: left;
-}
+    .daterangepicker_end_input {
+        float: left;
+        padding-left: 11px;
+    }
 
-.daterangepicker_end_input {
-    float: left;
-    padding-left: 11px;
-}
+    .ranges {
+        text-align: left;
+        margin: 4px;
+        width: 160px;
 
-.daterangepicker th.month {
-    width: auto;
-}
+        input {
+            font-size: 11px;
+        }
 
-.daterangepicker .daterangepicker_start_input label,
-.daterangepicker .daterangepicker_end_input label {
-    color: #333;
-    display: block;
-    font-size: 11px;
-    font-weight: normal;
-    height: 20px;
-    line-height: 20px;
-    margin-bottom: 2px;
-    text-shadow: #fff 1px 1px 0px;
-    text-transform: uppercase;
-    width: 74px;
-}
+        .input-mini {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #555;
+            display: block;
+            font-size: 11px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 0 10px 0;
+            padding: 0 6px;
+            width: 74px;
+            vertical-align: middle;
 
-.daterangepicker .ranges input {
-    font-size: 11px;
-}
+            &:hover {
+                cursor: pointer;
+            }
+        }
 
-.daterangepicker .ranges .input-mini {
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #555;
-    display: block;
-    font-size: 11px;
-    height: 30px;
-    line-height: 30px;
-    vertical-align: middle;
-    margin: 0 0 10px 0;
-    padding: 0 6px;
-    width: 74px;
-}
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.daterangepicker .ranges .input-mini:hover {
-    cursor: pointer;
-}
+        li {
+            background: #f5f5f5;
+            border: 1px solid #f5f5f5;
+            border-radius: 5px;
+            color: #536A7F;
+            cursor: pointer;
+            font-size: 13px;
+            margin-bottom: 8px;
+            padding: 3px 12px;
 
-.daterangepicker .ranges ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+            &.active,
+            &:hover {
+                background: #536A7F;
+                border: 1px solid #536A7F;
+                color: #fff;
+            }
+        }
 
-.daterangepicker .ranges li {
-    font-size: 13px;
-    background: #f5f5f5;
-    border: 1px solid #f5f5f5;
-    color: #536A7F;
-    padding: 3px 12px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .range_inputs > div {
+            float: left;
 
-.daterangepicker .ranges li.active,
-.daterangepicker .ranges li:hover {
-    background: #536A7F;
-    border: 1px solid #536A7F;
-    color: #fff;
-}
+            &:nth-child(2) {
+                padding-left: 11px;
+            }
+        }
+    }
 
-.daterangepicker .calendar {
-    display: none;
-    max-width: 270px;
-}
+    .calendar {
+        display: none;
+        max-width: 270px;
+    }
 
-.daterangepicker.show-calendar .calendar {
-    display: block;
-}
+    &.show-calendar .calendar {
+        display: block;
+    }
 
-.daterangepicker .calendar.single .calendar-date {
-    border: none;
-}
+    .calendar.single .calendar-date {
+        border: none;
+    }
 
-.daterangepicker.single .ranges,
-.daterangepicker.single .calendar {
-    float: none;
-}
+    &.single .ranges,
+    &.single .calendar {
+        float: none;
+    }
 
-.daterangepicker .ranges {
-    width: 160px;
-    text-align: left;
-    margin: 4px;
-}
+    &.opensleft .ranges,
+    &.opensleft .calendar {
+        float: left;
+        margin: 4px;
+    }
 
-.daterangepicker .ranges .range_inputs > div {
-    float: left;
-}
-
-.daterangepicker .ranges .range_inputs > div:nth-child(2) {
-    padding-left: 11px;
-}
-
-.daterangepicker.opensleft .ranges,
-.daterangepicker.opensleft .calendar {
-    float: left;
-    margin: 4px;
-}
-
-.daterangepicker .icon {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
+    .icon {
+        display: inline-block;
+        height: 20px;
+        vertical-align: middle;
+        width: 20px;
+    }
 }

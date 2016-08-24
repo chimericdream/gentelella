@@ -23,7 +23,7 @@
 @import "login";
 @import "media-gallery";
 @import "messages";
-@import "moris";
+@import "morris";
 @import "nav";
 @import "nprogress";
 @import "pnotify";
@@ -1539,4 +1539,21 @@ ul.user_data li p {
 }
 ul.user_data li .progress {
     width: 90%;
+}
+.xdisplay_input {
+    width: 240px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.xdisplay {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    width: 230px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }

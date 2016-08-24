@@ -1,8 +1,7 @@
-.dropdown-menu.msg_list span {
-    white-space: normal;
-}
 .dropdown-menu {
-    border: medium none;
+    border: 1px solid #D9DEE4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     box-shadow: none;
     display: none;
     float: left;
@@ -14,11 +13,16 @@
     text-shadow: none;
     top: 100%;
     z-index: 9998;
-    border: 1px solid #D9DEE4;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
 
-}
-.dropdown-menu>li>a {
-    color: #5A738E;
+    a {
+        cursor: pointer;
+    }
+
+    & > li > a {
+        color: #5A738E;
+    }
+
+    &.msg_list span {
+        white-space: normal;
+    }
 }

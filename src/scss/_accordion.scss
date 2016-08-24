@@ -1,14 +1,18 @@
-.accordion .panel {
-    margin-bottom: 5px;
-    border-radius: 0;
-    border-bottom: 1px solid #efefef;
-}
-.accordion .panel-heading {
-    background: #F2F5F7;
-    padding: 13px;
-    width: 100%;
-    display: block;
-}
-.accordion .panel:hover {
-    background: #F2F5F7;
+.accordion {
+    .panel {
+        border-bottom: 1px solid #efefef;
+        border-radius: 0;
+        margin-bottom: 5px;
+
+        &:hover {
+            background: #F2F5F7;
+        }
+    }
+
+    .panel-heading {
+        background: #F2F5F7;
+        display: block;
+        padding: 13px;
+        width: 100%;
+    }
 }
